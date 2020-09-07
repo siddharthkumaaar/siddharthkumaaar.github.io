@@ -10,3 +10,15 @@
 #detail{
     white-space: pre-wrap;
 }
+
+.techSkillImg{
+    height: 130px;
+    width: 130px;
+    margin: 20px;
+}
+.techSkill{
+    color: gray;
+    font-size: 25px;
+    font-weight: bolder;
+
+}
