@@ -22,3 +22,14 @@
     font-weight: bolder;
 
 }
+
+.profi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tools{
+    height: 130px;
+    width: 130px;
+}
