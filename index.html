@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="./fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
+    <!-- Include the library. -->
+    <script
+    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
     <title>Siddharth Portfolio</title>
 </head>
 <body>
@@ -94,8 +104,90 @@
                 <br>
                 <br>
                 <p class="techSkill">My Projects</p>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="project_1.png" alt="project1">
+                            <div class="card-body">
+                                <h5 class="card-title">Clone of delivery.com</h5>
+                                <p class="card-text">This project is the pixel perfect clone made using react, redux, express, mongodb and bootstrap</p>
+                                <div>
+                                    <img src="html-5.svg" alt="html5" style="height: 30px; margin: 10px;">
+                                    <img src="css-3.svg" alt="CSS" style="height: 30px; margin: 10px;">
+                                    <img src="bootstrap.svg" alt="bootstrap" style="height: 30px; margin: 10px;">
+                                    <img src="javascript.svg" alt="javascript" style="height: 30px; margin: 10px;">
+                                    <img src="react.svg" alt="react" style="height: 30px; margin: 10px;">
+                                    <img src="redux.svg" alt="redux" style="height: 30px; margin: 10px;">
+                                </div>
+                                <br>
+                                <a href="#" class="btn btn-primary">Github Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card"></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card"></div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row profi">
+                    <div class="col-lg-3" style="text-align: center;">
+                        <div style="width: 200px; height: 200px; border-radius: 50%; border: 15px solid #18a2b8; padding: 40px;"><h1 style="margin-top: 20px;">1000+</h1></div>
+                        <div style="margin-right: 60px;">
+                            <h2>Hours</h2>
+                            <h3>of coding</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="text-align: center;">
+                        <div style="width: 200px; height: 200px; border-radius: 50%; border: 15px solid #18a2b8; padding: 40px;"><h1 style="margin-top: 20px;">250+</h1></div>
+                        <div style="margin-right: 60px;">
+                            <h2>Hacker</h2>
+                            <h3>Rank Problem</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="text-align: center;">
+                        <div style="width: 200px; height: 200px; border-radius: 50%; border: 15px solid #18a2b8; padding: 40px;"><h1 style="margin-top: 20px;">300+</h1></div>
+                        <div style="margin-right: 60px;">
+                            <h2>Git</h2>
+                            <h3>commit</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="text-align: center;">
+                        <div style="width: 200px; height: 200px; border-radius: 50%; border: 15px solid #18a2b8; padding: 40px;"><h1 style="margin-top: 20px;">100+</h1></div>
+                        <div style="margin-right: 60px;">
+                            <h2>Hours</h2>
+                            <h3>of Soft-skill</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Prepare a container for your calendar. -->
+                        <div class="calendar">
+                            <!-- Loading stuff -->
+                            Loading the data just for you.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        // GitHubCalendar(".calendar", "siddharthkumaaar");
+    
+        // or enable responsive functionality:
+        GitHubCalendar(".calendar", "siddharthkumaaar", { responsive: true });
+    
+        // Use a proxy
+        // GitHubCalendar(".calendar", "siddharthkumaaar", {
+        //    proxy (siddharthkumaaar) {
+        //      return fetch(`https://your-proxy.com/github?user=${siddharthkumaaar}`)
+        //    }
+        // }).then(r => r.text())
+    </script>
 </body>
 </html>
